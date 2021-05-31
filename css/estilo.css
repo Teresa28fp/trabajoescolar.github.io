@@ -1,0 +1,7 @@
+body { background:gray; }
+
+@font-face {
+	src:url(pacifico.ttf);
+	font-family:"pacifico";
+}
+ .pacifico { font-family:"pacifico"; }

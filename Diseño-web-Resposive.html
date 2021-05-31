@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Diseño Web Responsive</title>
+	<style type="text/css">
+	    @media screen and (max-width:1200px) {
+	    	img {
+	    		width:100%;
+	    	}
+	    }
+	    .TextoAdaptable {
+	    	font-size-adjust:4vw;
+	    }
+	    h1 {font-size:6vw;}
+	    *{
+	    	box-sizing:border-box;
+	    }
+	    .izquierda { 
+	    	background-color:#84C120;
+	    	padding:20px;
+	    	float:left;
+	    	width:20%;
+	     }
+	     .principal {
+	     	background-color:#09AA2E;
+	     	padding:20px;
+	     	float:left;
+	     	width:60%;
+	     }
+	     .derecha {
+	     	background-color:#0EA454;
+	     	padding:20px;
+	     	float:left;
+	     	width:20%;
+	     }
+	</style>
+</head>
+<body>
+	<h1>Diseño Web Responsive</h1>
+	<hr>
+
+    <h2>Atardecer Vallartense</h2>
+    <img src="Imagenes/atardeceres.jpg">
+
+    <h3>Atardeceres</h3>
+    <picture>
+    	<source srcset="imagenes/barquito.jpg" media="(max-width: 480)">
+    	<source srcset="imagenes/palmeras.jpg" media="(max-width: 768px)">
+    	<source srcset="imagenes/sol.jpg" media="(max-width: 1366px)">
+    	<img src="imagenes/sol.jpg">
+    </picture>
+
+    <h2>Textos adaptables</h2>
+    <p class="TextoAdaptable">Esta es una pàgina de prueba para una actividad escolar</p>
+
+    <p>Los mejores atardeceres los encuentras en Puerto Vallarta</p>
+
+    <h2>Contenedores</h2>
+    <div class="izquierda">
+    	<p>Menù Izquierdo</P>
+    	</div>
+
+    <div class="principal">
+    	<p>Contenido Principal</p>
+    </div> 
+
+    <div class="derecha">
+    		<p>Barra Lateral</p>
+    </div>	
+   	
+</body>
+</html>
